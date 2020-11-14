@@ -3,26 +3,40 @@
         body {
             font-size: 15pt;
             font-family: arial;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+        }
+
+        .search-box {
+            display: flex;
+            flex-direction: column;
         }
     </style>
 
 
     <body>
-        <h1>Some famous Computer Scientists</h1>
-        <div>{{ data }}</div>
+        <h1>Crimes Database</h1>
 
-        <div>
-            {% for n in data %}
-                <div>{{ n }}</div>
-            {% endfor %}
+{#        <div>#}
+{#            {% for n in data %}#}
+{#                <div>{{ n }}</div>#}
+{#            {% endfor %}#}
+{#        </div>#}
+
+{#        <p><a href="another">Go to the other page</a></p>#}
+
+        <div class="search-box">
+            <p>Search for a location</p>
+            <form method="POST" action="/">
+                <input type="text" name="location"> <input type="submit" value="Search!">
+            </form>
         </div>
-
-        <p><a href="another">Go to the other page</a></p>
-
-        <form method="POST" action="/add">
-            <p>Name of new computer scientist: <input type="text" name="name"> <input type="submit" value="Add"></p>
-        </form>
-
     </body>
 
 

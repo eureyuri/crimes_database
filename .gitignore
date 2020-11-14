@@ -139,3 +139,5 @@ cython_debug/
 
 #venv
 crimes_database/
+
+.idea/
