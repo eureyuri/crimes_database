@@ -1,0 +1,105 @@
+<html>
+    <style>
+        body {
+            font-size: 15pt;
+            font-family: arial;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 10px;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            border-radius: 8px;
+            width: 300px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            margin: 15px;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        .container {
+            padding: 2px 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+    </style>
+
+
+    <body>
+        <h1>{{ location }}</h1>
+
+            <div class="card-container">
+                <a href="/{{ location }}/crimes">
+                    <div class="card">
+                        <div class="container">
+                                <h3>Number of crimes</h3>
+                                <p>{{ number_crimes }}</p>
+                            </div>
+                    </div>
+                </a>
+
+                <a href="/{{ location }}/police_offices">
+                    <div class="card">
+                        <div class="container">
+                            <h3>Number of police offices</h3>
+                            <p>{{ number_police_offices }}</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="/{{ location }}/police_crimes">
+                    <div class="card">
+                        <div class="container">
+                            <h3>Number of police crimes</h3>
+                            <p>{{ number_police_crimes }}</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="/{{ location }}/missing">
+                    <div class="card">
+                        <div class="container">
+                            <h3>Number of missing</h3>
+                            <p>{{ number_missing }}</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="/{{ location }}/fugitives">
+                    <div class="card">
+                        <div class="container">
+                            <h3>Number of fugitives</h3>
+                            <p>{{ number_fugitives }}</p>
+                        </div>
+                    </div>
+                </a>
+        </div>
+    </body>
+
+
+</html>
