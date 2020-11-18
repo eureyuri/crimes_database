@@ -1,6 +1,6 @@
 # COMS4111 Project 1 Part 3
 - PostgreSQL account: wz2557
-- URL of web application: http://
+- URL of web application: http://35.237.111.157:8111/
 
 ## Description of Implemented parts 
 We were able to implement all the functionalities proposed in part 1.
