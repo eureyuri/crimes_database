@@ -10,11 +10,10 @@ As newcomers to a city, we never know nor have connections who can tell us which
 international students ourselves, this was certainly a concern for us as well as our families who worry about us every 
 day overseas. This is where we came up with the idea of making a database based on crimes in the U.S. In this 
 application, we will be able to look for crimes related to specific locations (states) within the U.S. to identify dangerous 
-locations that newcomers should avoid. For each location, we will display data such as the crime rate, past crime 
+locations that newcomers should avoid. For each location, we will display data such as the number of crimes, past crime 
 history, and locations of police offices. In addition to these fundamental functionalities, we will extend this app to 
 display the details of the crime as well as display the missing and wanted person to branch for help to the public. 
-Another aspect we intend to tackle is the current issue of police brutality. Since we will have a record of the police 
-departments as well as the police officer’s identification number with their associated charges, we hope to have a 
+Another aspect we intend to tackle is the current issue of police brutality. Since we will have a record of the police officer with their associated charges, we hope to have a 
 positive impact on the officers’ actions (such as them having a second thought before doing the wrong) since they will 
 be publicly organized and displayed.
 
