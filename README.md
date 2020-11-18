@@ -19,8 +19,8 @@ positive impact on the officers’ actions (such as them having a second thought
 be publicly organized and displayed.
 
 ## Two web pages with the most interesting database operations
-1.
-2. 
+1.The location page is interesting because its output comes from multiple database tables and queries. We use SELECT COUNT(*) and WHERE table.state=user input state to get the number of crimes, police offices, police crimes, homicides, missing people, and fugitives in the selected state. The total number of crimes is equal to the sum of homicides and police crimes. This page is used to give the user an overview of how safe/unsafe the chosen state is.  
+2. The police crimes page is also interesting because it allows the user to get detailed information on police crimes in the selected state. It first uses the user input to find police crimes that happened in the selected state. Then it finds the corresponding victim's information by matching case_id in Police_Crimes_Work_At table and Police_crime_victims table. This page displays both police officers' and victims' information, including age, race, sex, etc. 
 
 # Instructions
 1. Create virtual environment with
