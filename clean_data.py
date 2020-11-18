@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import datetime
 
-df = pd.read_csv('SHR76_17.csv', sep=',', nrows=10000, skiprows=range(1, 750000))
+df = pd.read_csv('data/SHR76_17.csv', sep=',', nrows=10000, skiprows=range(1, 750000))
 # df = pd.read_csv('SHR76_17.csv', sep=',', nrows=10)
 
 # Crimes
@@ -13,4 +13,4 @@ for index, row in df.iterrows():
     month_num = datetime.datetime.strptime(month, '%B').month
     df.loc[index, 'month'] = month_num
 
-df.to_csv('crimes.csv', sep=',', index=False)
+df.drop_duplicates().to_csv('data/crimes.csv', sep=',', index=False)

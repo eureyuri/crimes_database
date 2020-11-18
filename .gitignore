@@ -141,3 +141,7 @@ cython_debug/
 crimes_database/
 
 .idea/
+
+data/
+
+.DS_Store
