@@ -145,3 +145,5 @@ crimes_database/
 data/
 
 .DS_Store
+
+.env
