@@ -1,11 +1,9 @@
-# COMS4111 Project 1 Part 3
-- PostgreSQL account: wz2557
-- URL of web application: http://35.237.111.157:8111/
+# Crimes Database 
+##### COMS4111 Project 1 Part 3
+- Database on Google Cloud PostgreSQL server
+- Made with Python Flask and sqlalchemy
 
-## Description of Implemented parts 
-We were able to implement all the functionalities proposed in part 1. The description is below. 
-<br>
-<br>
+## Description
 As newcomers to a city, we never know nor have connections who can tell us which part of the city is dangerous. As 
 international students ourselves, this was certainly a concern for us as well as our families who worry about us every 
 day overseas. This is where we came up with the idea of making a database based on crimes in the U.S. In this 
